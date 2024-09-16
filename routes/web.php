@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DataManagemenController;
 use App\Http\Controllers\GoogleSheetController;
+use App\Http\Controllers\LaporanPegawai;
 use App\Http\Controllers\SheetHarianDisiplinController;
 
 /** for side bar menu active */
@@ -38,6 +39,11 @@ Route::group(['namespace' => 'App\Http\Controllers'],function()
     Route::controller(AbsensiPegawai::class)->group(function () {
         Route::get('/absensi-harian', 'absensi_harian')->middleware('auth')->name('absensi-harian');
         Route::get('/absensi-disiplin', 'absensi_disiplin')->middleware('auth')->name('absensi-disiplin');
+    });
+
+    Route::controller(LaporanPegawai::class)->group(function () {
+        Route::get('/laporan-presensi', 'laporan_presensi')->middleware('auth')->name('laporan-presensi');
+        Route::get('/laporan-disiplin', 'laporan_disiplin')->middleware('auth')->name('laporan-disiplin');
     });
 });
 
