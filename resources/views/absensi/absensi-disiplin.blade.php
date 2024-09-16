@@ -53,8 +53,8 @@
                                 <th class="text-center align-middle">Telat <br> (Menit)</th>
                                 <th class="text-center align-middle">Pulang Cepat <br> (Menit)</th>
                                 <th class="text-center align-middle">Absen Sekali <br> (Menit)</th>
-                                <th class="text-center align-middle">Tanpa Keterangan <br> (Hari) </th>
-                                <th class="text-center align-middle">Telat Disanggah <br> (Menit)</th>
+                                <th class="text-center align-middle">Tanpa <br> Keterangan <br> (Hari) </th>
+                                <th class="text-center align-middle">Telat <br> Disanggah <br> (Menit)</th>
                                 <th class="text-center align-middle">Pulang Cepat <br>Disanggah <br> (Menit)</th> 
                                 <th class="text-center align-middle">Total <br> (Hari)</th>                                   
                             </tr>

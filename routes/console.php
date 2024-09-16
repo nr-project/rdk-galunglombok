@@ -13,4 +13,4 @@ Artisan::command('google:sheets:update', function () {
 
 Artisan::command('google:sheets:harian-disiplin', function () {
     $this->call('google:sheets:harian-disiplin');
-})->dailyAt('08:30')->timezone('Asia/Makassar');
+})->dailyAt('08:45')->timezone('Asia/Makassar');

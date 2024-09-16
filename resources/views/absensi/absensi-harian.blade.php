@@ -50,7 +50,7 @@
                                 <th rowspan="2" class="text-center align-middle">No.</th>
                                 <th rowspan="2" class="text-center align-middle" hidden>>NIP</th>
                                 <th rowspan="2" class="text-center align-middle">Nama Pegawai</th>
-                                <th rowspan="2" class="text-center align-middle">Telat <br> (Menit)</th>
+                                <th rowspan="2" class="text-center align-middle">Jumlah <br> Hari <br> Kerja</th>
                                 <th colspan="5" class="text-center">Hadir</th>
                                 <th rowspan="2" class="text-center align-middle">Total <br> Kehadiran</th>
                                 <th colspan="3" class="text-center">Tidak Hadir</th>
