@@ -3,21 +3,28 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\GoogleSheetsService;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register services.
+     *
+     * @return void
      */
-    public function register(): void
+    public function register()
     {
-        //
+        $this->app->singleton(GoogleSheetsService::class, function ($app) {
+            return new GoogleSheetsService();
+        });
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
+     *
+     * @return void
      */
-    public function boot(): void
+    public function boot()
     {
         //
     }

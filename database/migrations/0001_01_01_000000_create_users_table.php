@@ -13,8 +13,15 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id')->nullable()->unique();
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('username')->unique();
+            $table->string('email')->unique()->nullable();
+            $table->timestamp('join_date')->nullable();
+            $table->string('phone_number')->nullable();
+            $table->timestamp('last_login')->nullable();
+            $table->enum('role_name', ['super_admin', 'admin'])->default('admin');
+            $table->string('avatar')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
@@ -22,8 +29,9 @@ return new class extends Migration
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
-            $table->string('email')->primary();
-            $table->string('token');
+            $table->id();
+            $table->string('email')->nullable();
+            $table->string('token')->nullable();
             $table->timestamp('created_at')->nullable();
         });
 
