@@ -60,8 +60,8 @@ class DatabaseSeeder extends Seeder
             'password'  => Hash::make('bkkbn@666803')
         ]);
 
-        //Excel::import(new ImportKabupaten, storage_path('\app\public\file\data_provinsi.xlsx'));
-        //Excel::import(new ImportKabupaten, storage_path('\app\public\file\data_kabupaten.xlsx'));
+        Excel::import(new ImportKabupaten, storage_path('/app/public/file/data_provinsi.xlsx'));
+        Excel::import(new ImportKabupaten, storage_path('/app/public/file/data_kabupaten.xlsx'));
         //Excel::import(new ImportKecamatan, storage_path('\app\public\file\data_wilayah.xlsx'));
         //Excel::import(new ImportTimKerja, storage_path('\app\public\file\tim_kerja.xlsx'));
         //Excel::import(new ImportJabatan, storage_path('\app\public\file\jabatan.xlsx'));
