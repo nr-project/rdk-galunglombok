@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'name'      => 'NR',
             'email'     => 'nurhidaya.rahim24@gmail.com',
-            'username'  => 'super_admin',
+            'username'  => 'NR',
             'role_name' => 'super_admin',
             'password'  => Hash::make('Semangat@321')
         ]);
@@ -61,16 +61,16 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //Excel::import(new ImportKabupaten, storage_path('\app\public\file\data_provinsi.xlsx'));
-        Excel::import(new ImportKabupaten, storage_path('\app\public\file\data_kabupaten.xlsx'));
+        //Excel::import(new ImportKabupaten, storage_path('\app\public\file\data_kabupaten.xlsx'));
         //Excel::import(new ImportKecamatan, storage_path('\app\public\file\data_wilayah.xlsx'));
-        Excel::import(new ImportTimKerja, storage_path('\app\public\file\tim_kerja.xlsx'));
-        Excel::import(new ImportJabatan, storage_path('\app\public\file\jabatan.xlsx'));
-        Excel::import(new ImportPendidikan, storage_path('\app\public\file\pendidikan.xlsx'));
-        Excel::import(new ImportKelasJabatan, storage_path('\app\public\file\jabatan dan kelas jabatan.xlsx'));
-        Excel::import(new ImportPangkatGol, storage_path('\app\public\file\pangkat dan golongan.xlsx'));
-        Excel::import(new ImportDataPegawai, storage_path('\app\public\file\asn.xlsx'));
-        Excel::import(new ImportDataPKB, storage_path('\app\public\file\asn pkb.xlsx'));
-        Excel::import(new ImportTahunanPresensi, storage_path('\app\public\file\rekap presensi jan_aug.xlsx'));
-        Excel::import(new ImportTahunanDisiplin, storage_path('\app\public\file\rekap disiplin jan_aug.xlsx'));
+        //Excel::import(new ImportTimKerja, storage_path('\app\public\file\tim_kerja.xlsx'));
+        //Excel::import(new ImportJabatan, storage_path('\app\public\file\jabatan.xlsx'));
+        //Excel::import(new ImportPendidikan, storage_path('\app\public\file\pendidikan.xlsx'));
+        //Excel::import(new ImportKelasJabatan, storage_path('\app\public\file\jabatan dan kelas jabatan.xlsx'));
+        //Excel::import(new ImportPangkatGol, storage_path('\app\public\file\pangkat dan golongan.xlsx'));
+        //Excel::import(new ImportDataPegawai, storage_path('\app\public\file\asn.xlsx'));
+        //Excel::import(new ImportDataPKB, storage_path('\app\public\file\asn pkb.xlsx'));
+        //Excel::import(new ImportTahunanPresensi, storage_path('\app\public\file\rekap presensi jan_aug.xlsx'));
+        //Excel::import(new ImportTahunanDisiplin, storage_path('\app\public\file\rekap disiplin jan_aug.xlsx'));
     }
 }
