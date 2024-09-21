@@ -2,24 +2,25 @@
 
 namespace Database\Seeders;
 
-use App\Imports\ImportDataPegawai;
-use App\Imports\ImportDataPKB;
-use App\Imports\ImportJabatan;
 use App\Models\User;
 use App\Models\Kabupaten;
+use App\Imports\ImportDataPKB;
+use App\Imports\ImportJabatan;
 use App\Imports\ImportProvinsi;
 use App\Imports\ImportTimKerja;
 use Illuminate\Database\Seeder;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Imports\ImportKabupaten;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Imports\ImportKecamatan;
-use App\Imports\ImportKelasJabatan;
 use App\Imports\ImportPangkatGol;
 use App\Imports\ImportPendidikan;
-use App\Imports\ImportTahunanDisiplin;
-use App\Imports\ImportTahunanPresensi;
+use App\Imports\ImportDataPegawai;
+use App\Imports\ImportKelasJabatan;
+use Database\Seeders\ProvinsiSeeder;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\ImportTahunanDisiplin;
+use App\Imports\ImportTahunanPresensi;
 
 class DatabaseSeeder extends Seeder
 {
@@ -60,6 +61,8 @@ class DatabaseSeeder extends Seeder
             'password'  => Hash::make('bkkbn@666803')
         ]);
 
+        $this->call(ProvinsiSeeder::class);
+
         //Excel::import(new ImportKabupaten, storage_path('/app/public/file/data_provinsi.xlsx'));
         //Excel::import(new ImportKabupaten, storage_path('/app/public/file/data_kabupaten.xlsx'));
         //Excel::import(new ImportKecamatan, storage_path('\app\public\file\data_wilayah.xlsx'));
@@ -68,9 +71,10 @@ class DatabaseSeeder extends Seeder
         //Excel::import(new ImportPendidikan, storage_path('\app\public\file\pendidikan.xlsx'));
         //Excel::import(new ImportKelasJabatan, storage_path('\app\public\file\jabatan dan kelas jabatan.xlsx'));
         //Excel::import(new ImportPangkatGol, storage_path('\app\public\file\pangkat dan golongan.xlsx'));
-        Excel::import(new ImportDataPegawai, storage_path('\app\public\file\asn.xlsx'));
+        //Excel::import(new ImportDataPegawai, storage_path('\app\public\file\asn.xlsx'));
         //Excel::import(new ImportDataPKB, storage_path('\app\public\file\asn pkb.xlsx'));
         //Excel::import(new ImportTahunanPresensi, storage_path('\app\public\file\rekap presensi jan_aug.xlsx'));
         //Excel::import(new ImportTahunanDisiplin, storage_path('\app\public\file\rekap disiplin jan_aug.xlsx'));
     }
+
 }
