@@ -12,6 +12,7 @@
     }
 </style>
 
+
 @section('content')
     <!-- Page-content -->
     <div class="group-data-[sidebar-size=lg]:ltr:md:ml-vertical-menu group-data-[sidebar-size=lg]:rtl:md:mr-vertical-menu group-data-[sidebar-size=md]:ltr:ml-vertical-menu-md group-data-[sidebar-size=md]:rtl:mr-vertical-menu-md group-data-[sidebar-size=sm]:ltr:ml-vertical-menu-sm group-data-[sidebar-size=sm]:rtl:mr-vertical-menu-sm pt-[calc(theme('spacing.header')_*_1)] pb-[calc(theme('spacing.header')_*_0.8)] px-4 group-data-[navbar=bordered]:pt-[calc(theme('spacing.header')_*_1.3)] group-data-[navbar=hidden]:pt-0 group-data-[layout=horizontal]:mx-auto group-data-[layout=horizontal]:max-w-screen-2xl group-data-[layout=horizontal]:px-0 group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:ltr:md:ml-auto group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:rtl:md:mr-auto group-data-[layout=horizontal]:md:pt-[calc(theme('spacing.header')_*_1.6)] group-data-[layout=horizontal]:px-3 group-data-[layout=horizontal]:group-data-[navbar=hidden]:pt-[calc(theme('spacing.header')_*_0.9)]">
@@ -19,6 +20,7 @@
             <div class="flex flex-col gap-2 py-4 md:flex-row md:items-center print:hidden">
                 <div class="grow">
                     <h5 class="text-16">Laporan Kehadiran</h5>
+
                 </div>
                 <ul class="flex items-center gap-2 text-sm font-normal shrink-0">
                     <li class="relative before:content-['\ea54'] before:font-remix ltr:before:-right-1 rtl:before:-left-1  before:absolute before:text-[18px] before:-top-[3px] ltr:pr-4 rtl:pl-4 before:text-slate-400 dark:text-zink-200">
@@ -29,6 +31,60 @@
                     </li>
                 </ul>
             </div>
+            <form action="{{ route('laporan-presensi') }}" method="GET" class="flex items-center gap-2">
+                <div style="width: 500px;">
+                    <div>
+                        <select name="id_jabatan" id="id_jabatan" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                            <option value="">-- Pilih Jabatan --</option>
+                            @foreach($jabatanList as $jabatan)
+                              <option value="{{ $jabatan->id }}" {{ request('id_jabatan') == $jabatan->id ? 'selected' : '' }}>
+                                {{ $jabatan->jabatan }}
+                              </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                  <div style="width: 200px;">
+                      <div>
+                          <select name="bulan_awal" id="bulan_awal" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                              @for ($i = 1; $i <= 12; $i++)
+                                  <option value="{{ $i }}" {{ $i == $bulanAwal ? 'selected' : '' }}>{{ date('F', mktime(0, 0, 0, $i, 1)) }}</option>
+                              @endfor
+                          </select>
+                      </div>
+                  </div>
+                  <div style="width: 150px;">
+                      <div>
+                          <select name="tahun_awal" id="tahun_awal" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                              @for ($i = now()->year; $i >= 2024; $i--)
+                                  <option value="{{ $i }}" {{ $i == $tahunAwal ? 'selected' : '' }}>{{ $i }}</option>
+                              @endfor
+                          </select>
+                      </div>
+                  </div>
+                  <div style="width: 200px;">
+                      <div>
+                          <select name="bulan_akhir" id="bulan_akhir" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                              @for ($i = 1; $i <= 12; $i++)
+                                  <option value="{{ $i }}" {{ $i == $bulanAkhir ? 'selected' : '' }}>{{ date('F', mktime(0, 0, 0, $i, 1)) }}</option>
+                              @endfor
+                          </select>
+                      </div>
+                  </div>
+                  <div style="width: 150px;">
+                      <div>
+                          <select name="tahun_akhir" id="tahun_akhir" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                              @for ($i = now()->year; $i >= 2024; $i--)
+                                  <option value="{{ $i }}" {{ $i == $tahunAkhir ? 'selected' : '' }}>{{ $i }}</option>
+                              @endfor
+                          </select>
+                      </div>
+                  </div>
+                  
+                  <div class="xl:col-span-12">
+                      <button type="submit" id="filter" class="text-white btn bg-custom-500 border-custom-500 hover:text-white hover:bg-custom-600 hover:border-custom-600 focus:text-white focus:bg-custom-600 focus:border-custom-600 focus:ring focus:ring-custom-100 active:text-white active:bg-custom-600 active:border-custom-600 active:ring active:ring-custom-100 dark:ring-custom-400/20">Search</button>
+                  </div>
+            </form>
             <div class="card">
                 <div class="card-body">
                     <div class="flex items-center">
@@ -93,5 +149,17 @@
         </div>
     </div>
     <!-- End Page-content -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').select2({
+            minimumResultsForSearch: Infinity // Menyembunyikan pencarian jika tidak diperlukan
+        });
+    });
+</script>
+
 
 @endsection

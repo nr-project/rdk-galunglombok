@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\ImportTahunanDisiplin;
 use App\Imports\ImportTahunanPresensi;
+use App\Models\Month;
 
 class DatabaseSeeder extends Seeder
 {

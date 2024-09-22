@@ -28,7 +28,7 @@ class DataPKBSeeder extends Seeder
             $idPendidikan = DB::table('pendidikans')->where('pendidikan', $item['Pendidikan Akhir'])->value('id');
             $idLokasi = DB::table('kabupatens')->where('id_prov', '30')->where('kabupaten', $item['Lokasi Kabupaten'])->value('id');
 
-            DB::table('data_pegawais')->insert([
+            DB::table('data_p_k_b_s')->insert([
                 'nip' => $item['NIP Baru'],
                 'nama' => $item['Nama'],
                 'nama_gelar' => $item['Nama Lengkap'],

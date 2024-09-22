@@ -29,6 +29,63 @@
                     </li>
                 </ul>
             </div>
+
+            <form action="{{ route('laporan-disiplin') }}" method="GET" class="flex items-center gap-2">
+              <div style="width: 500px;">
+                <div>
+                    <select name="id_jabatan" id="id_jabatan" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                        <option value="">-- Pilih Jabatan --</option>
+                        @foreach($jabatanList as $jabatan)
+                          <option value="{{ $jabatan->id }}" {{ request('id_jabatan') == $jabatan->id ? 'selected' : '' }}>
+                            {{ $jabatan->jabatan }}
+                          </option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+              <div style="width: 200px;">
+                  <div>
+                      <select name="bulan_awal" id="bulan_awal" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                          @for ($i = 1; $i <= 12; $i++)
+                              <option value="{{ $i }}" {{ $i == $bulanAwal ? 'selected' : '' }}>{{ date('F', mktime(0, 0, 0, $i, 1)) }}</option>
+                          @endfor
+                      </select>
+                  </div>
+              </div>
+              <div style="width: 150px;">
+                  <div>
+                      <select name="tahun_awal" id="tahun_awal" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                          @for ($i = now()->year; $i >= 2024; $i--)
+                              <option value="{{ $i }}" {{ $i == $tahunAwal ? 'selected' : '' }}>{{ $i }}</option>
+                          @endfor
+                      </select>
+                  </div>
+              </div>
+              <div style="width: 200px;">
+                  <div>
+                      <select name="bulan_akhir" id="bulan_akhir" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                          @for ($i = 1; $i <= 12; $i++)
+                              <option value="{{ $i }}" {{ $i == $bulanAkhir ? 'selected' : '' }}>{{ date('F', mktime(0, 0, 0, $i, 1)) }}</option>
+                          @endfor
+                      </select>
+                  </div>
+              </div>
+              <div style="width: 150px;">
+                  <div>
+                      <select name="tahun_akhir" id="tahun_akhir" class="form-input border-slate-200 focus:outline-none focus:border-custom-500" >
+                          @for ($i = now()->year; $i >= 2024; $i--)
+                              <option value="{{ $i }}" {{ $i == $tahunAkhir ? 'selected' : '' }}>{{ $i }}</option>
+                          @endfor
+                      </select>
+                  </div>
+              </div>
+              
+              <div class="xl:col-span-12">
+                  <button type="submit" id="filter" class="text-white btn bg-custom-500 border-custom-500 hover:text-white hover:bg-custom-600 hover:border-custom-600 focus:text-white focus:bg-custom-600 focus:border-custom-600 focus:ring focus:ring-custom-100 active:text-white active:bg-custom-600 active:border-custom-600 active:ring active:ring-custom-100 dark:ring-custom-400/20">Search</button>
+              </div>
+            </form>
+
+
             <div class="card">
                 <div class="card-body">
                     <div class="flex items-center">
