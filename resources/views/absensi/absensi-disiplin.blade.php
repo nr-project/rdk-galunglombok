@@ -12,43 +12,44 @@
     }
 
     .bg-warning {
-    background-color: yellow; /* Kuning */
+        background-color: #ffff99; /* Kuning pudar */
     }
 
     .bg-danger-1 {
-    background-color: #ffcccc; /* Merah sangat muda */
+        background-color: #ffff00; /* Kuning cerah */
     }
 
     .bg-danger-2 {
-        background-color: #ff9999; /* Merah muda */
+        background-color: #ffcc00; /* Kuning tua */
     }
 
     .bg-danger-3 {
-        background-color: #ff6666; /* Merah */
+        background-color: #ff9900; /* Kuning lebih kuat */
     }
 
     .bg-danger-4 {
-        background-color: #ff3333; /* Merah tua */
+        background-color: #ff6666; /* Oranye muda */
     }
 
     .bg-danger-5 {
-        background-color: #cc0000; /* Merah sangat tua */
+        background-color: #ff3333; /* Oranye */
     }
 
     .bg-danger-6 {
-        background-color: #990000; /* Merah gelap */
+        background-color: #ff0000; /* Merah */
     }
 
     .bg-danger-7 {
-        background-color: #660000; /* Merah lebih gelap */
+        background-color: #cc0000; /* Merah tua */
     }
 
     .bg-danger-8 {
-        background-color: #330000; /* Merah hampir hitam */
+        background-color: #990000; /* Merah lebih tua */
     }
 
     .bg-danger-9 {
-        background-color: #000000; /* Hitam */
+        background-color: #330000; /* Merah hampir hitam */
+        color: white; /* Teks putih untuk keterbacaan */
     }
 
     .text-white {
