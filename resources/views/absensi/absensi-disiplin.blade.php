@@ -10,6 +10,50 @@
     #alternativePagination tr:nth-child(odd) {
         background-color: #ffffff; /* Warna latar belakang untuk baris ganjil */
     }
+
+    .bg-warning {
+    background-color: yellow; /* Kuning */
+    }
+
+    .bg-danger-1 {
+    background-color: #ffcccc; /* Merah sangat muda */
+    }
+
+    .bg-danger-2 {
+        background-color: #ff9999; /* Merah muda */
+    }
+
+    .bg-danger-3 {
+        background-color: #ff6666; /* Merah */
+    }
+
+    .bg-danger-4 {
+        background-color: #ff3333; /* Merah tua */
+    }
+
+    .bg-danger-5 {
+        background-color: #cc0000; /* Merah sangat tua */
+    }
+
+    .bg-danger-6 {
+        background-color: #990000; /* Merah gelap */
+    }
+
+    .bg-danger-7 {
+        background-color: #660000; /* Merah lebih gelap */
+    }
+
+    .bg-danger-8 {
+        background-color: #330000; /* Merah hampir hitam */
+    }
+
+    .bg-danger-9 {
+        background-color: #000000; /* Hitam */
+    }
+
+    .text-white {
+        color: white; /* Mengubah warna teks menjadi putih */
+    }
 </style>
 
 @section('content')
@@ -72,7 +116,33 @@
                                     <td class="text-center align-middle">{{ isset($item->tk_hari) ? $item->tk_hari : '' }}</td>
                                     <td class="text-center align-middle">{{ isset($item->telat_sanggah) ? $item->telat_sanggah : '' }}</td>
                                     <td class="text-center align-middle">{{ isset($item->pc_sanggah) ? $item->pc_sanggah : '' }}</td>
-                                    <td class="text-center align-middle">{{ isset($item->total) ? $item->total : '' }}</td>
+                                    <td class="text-center align-middle 
+                                        @if (isset($item->total))
+                                            @if ($item->total >= 1 && $item->total <= 2)
+                                                bg-warning
+                                            @elseif ($item->total == 3)
+                                                bg-danger-1
+                                            @elseif ($item->total >= 4 && $item->total <= 6)
+                                                bg-danger-2
+                                            @elseif ($item->total >= 7 && $item->total <= 10)
+                                                bg-danger-3
+                                            @elseif ($item->total >= 11 && $item->total <= 13)
+                                                bg-danger-4
+                                            @elseif ($item->total >= 14 && $item->total <= 16)
+                                                bg-danger-5
+                                            @elseif ($item->total >= 17 && $item->total <= 20)
+                                                bg-danger-6
+                                            @elseif ($item->total >= 21 && $item->total <= 24)
+                                                bg-danger-7
+                                            @elseif ($item->total >= 25 && $item->total <= 27)
+                                                bg-danger-8
+                                            @elseif ($item->total >= 28)
+                                                bg-danger-9 text-white
+                                            @endif
+                                        @endif
+                                    ">
+                                    {{ isset($item->total) ? $item->total : '' }}
+                                </td>
                                 </tr>
                                 @endforeach
                             @endif
