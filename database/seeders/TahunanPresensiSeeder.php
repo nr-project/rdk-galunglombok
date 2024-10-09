@@ -10,7 +10,7 @@ class TahunanPresensiSeeder extends Seeder
 {
     public function run(): void
     {
-        $filePath = storage_path('app/public/file/rekap presensi jan_aug.json'); // Sesuaikan dengan path file JSON
+        $filePath = storage_path('app/public/file/rekap presensi jan_sep.json'); // Sesuaikan dengan path file JSON
 
         if (!file_exists($filePath)) {
             $this->command->error("File not found: $filePath");
