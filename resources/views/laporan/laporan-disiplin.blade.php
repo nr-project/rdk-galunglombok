@@ -1,50 +1,49 @@
 @extends('layouts.master')
 
 <style>
-    /* Memberi warna latar belakang untuk baris genap */
-    #alternativePagination tr:nth-child(even) {
-        background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
-    }
-
-    /* Opsional: memberi warna latar belakang untuk baris ganjil */
-    #alternativePagination tr:nth-child(odd) {
-        background-color: #ffffff; /* Warna latar belakang untuk baris ganjil */
-    }
-
     .bg-warning {
         background-color: #ffff99; /* Kuning pudar */
+        color: black;
     }
 
     .bg-danger-1 {
         background-color: #ffff00; /* Kuning cerah */
+        color: black;
     }
 
     .bg-danger-2 {
         background-color: #ffcc00; /* Kuning tua */
+        color: black;
     }
 
     .bg-danger-3 {
         background-color: #ff9900; /* Kuning lebih kuat */
+        color: black;
     }
 
     .bg-danger-4 {
         background-color: #ff6666; /* Oranye muda */
+        color: black;
     }
 
     .bg-danger-5 {
         background-color: #ff3333; /* Oranye */
+        color: white;
     }
 
     .bg-danger-6 {
         background-color: #ff0000; /* Merah */
+        color: white;
     }
 
     .bg-danger-7 {
         background-color: #cc0000; /* Merah tua */
+        color: white;
     }
 
     .bg-danger-8 {
         background-color: #990000; /* Merah lebih tua */
+        color: white;
     }
 
     .bg-danger-9 {
@@ -159,7 +158,7 @@
                         <tbody>
                             @if (!is_null($data))
                                 @foreach ($data as $item)
-                                <tr>
+                                <tr class="px-3.5 py-2.5 first:pl-5 last:pr-5 border-y border-slate-200 dark:border-zink-500">
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td class="align-middle" hidden>{{ isset($item->nip) ? $item->nip : '' }}</td>
                                     <td class="text-left align-middle">{{ isset($item->pegawais->nama) ? $item->pegawais->nama : '' }}</td>

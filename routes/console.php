@@ -9,8 +9,8 @@ Artisan::command('inspire', function () {
 
 Artisan::command('google:sheets:update', function () {
     $this->call('google:sheets:update');
-})->dailyAt('7:00')->timezone('Asia/Makassar');
+})->hourly()->timezone('Asia/Makassar');
 
 Artisan::command('google:sheets:harian-disiplin', function () {
     $this->call('google:sheets:harian-disiplin');
-})->dailyAt('7:02')->timezone('Asia/Makassar');
+})->hourly()->timezone('Asia/Makassar');
