@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 class AbsensiPegawai extends Controller
 {
     public function absensi_harian(){
+
+        $absenharian = new GoogleSheetController();
+        $absenharian->refresh();
+
         $presensi = HarianPresensi::with('pegawais')
                     ->get()
                     ->sortBy(function($presensi) {
@@ -20,6 +24,9 @@ class AbsensiPegawai extends Controller
     }
 
     public function absensi_disiplin(){
+        $absenharian = new SheetHarianDisiplinController();
+        $absenharian->refresh();
+
         $disiplin = HarianDisiplin::with('pegawais')
                     ->get()
                     ->sortBy(function($presensi) {
