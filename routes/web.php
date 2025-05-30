@@ -8,7 +8,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DataManagemenController;
 use App\Http\Controllers\GoogleSheetController;
-use App\Http\Controllers\LaporanPegawai;
+use App\Http\Controllers\KuantitasPenduduk;
 use App\Http\Controllers\SheetHarianDisiplinController;
 
 /** for side bar menu active */
@@ -32,6 +32,8 @@ Route::group(['namespace' => 'App\Http\Controllers'],function()
     Route::controller(HomeController::class)->group(function () {
         Route::get('/', 'index')->name('home');
     });
+
+    Route::get('/kelompok-umur', [KuantitasPenduduk::class, 'kelompok_umur']);
 });
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
