@@ -1,0 +1,130 @@
+[
+    {
+        "Nama Umur":"LOMBOK",
+        "Klasifikasi Umur":"7_12",
+        "Sekolah Lk":"39",
+        "Tidak Sekolah Lk":"10",
+        "Sekolah Pr":"21",
+        "Tidak Sekolah Pr":"6"
+    },
+    {
+        "Nama Umur":"LENA",
+        "Klasifikasi Umur":"7_12",
+        "Sekolah Lk":"18",
+        "Tidak Sekolah Lk":"9",
+        "Sekolah Pr":"34",
+        "Tidak Sekolah Pr":"13"
+    },
+    {
+        "Nama Umur":"GALUNG",
+        "Klasifikasi Umur":"7_12",
+        "Sekolah Lk":"19",
+        "Tidak Sekolah Lk":"7",
+        "Sekolah Pr":"23",
+        "Tidak Sekolah Pr":"8"
+    },
+    {
+        "Nama Umur":"PALUPPUNG",
+        "Klasifikasi Umur":"7_12",
+        "Sekolah Lk":"12",
+        "Tidak Sekolah Lk":"14",
+        "Sekolah Pr":"15",
+        "Tidak Sekolah Pr":"8"
+    },
+    {
+        "Nama Umur":"LOMBOK",
+        "Klasifikasi Umur":"13_15",
+        "Sekolah Lk":"25",
+        "Tidak Sekolah Lk":"2",
+        "Sekolah Pr":"15",
+        "Tidak Sekolah Pr":"0"
+    },
+    {
+        "Nama Umur":"LENA",
+        "Klasifikasi Umur":"13_15",
+        "Sekolah Lk":"9",
+        "Tidak Sekolah Lk":"0",
+        "Sekolah Pr":"19",
+        "Tidak Sekolah Pr":"1"
+    },
+    {
+        "Nama Umur":"GALUNG",
+        "Klasifikasi Umur":"13_15",
+        "Sekolah Lk":"10",
+        "Tidak Sekolah Lk":"2",
+        "Sekolah Pr":"11",
+        "Tidak Sekolah Pr":"0"
+    },
+    {
+        "Nama Umur":"PALUPPUNG",
+        "Klasifikasi Umur":"13_15",
+        "Sekolah Lk":"19",
+        "Tidak Sekolah Lk":"0",
+        "Sekolah Pr":"11",
+        "Tidak Sekolah Pr":"0"
+    },
+    {
+        "Nama Umur":"LOMBOK",
+        "Klasifikasi Umur":"16_18",
+        "Sekolah Lk":"21",
+        "Tidak Sekolah Lk":"3",
+        "Sekolah Pr":"19",
+        "Tidak Sekolah Pr":"3"
+    },
+    {
+        "Nama Umur":"LENA",
+        "Klasifikasi Umur":"16_18",
+        "Sekolah Lk":"9",
+        "Tidak Sekolah Lk":"3",
+        "Sekolah Pr":"17",
+        "Tidak Sekolah Pr":"1"
+    },
+    {
+        "Nama Umur":"GALUNG",
+        "Klasifikasi Umur":"16_18",
+        "Sekolah Lk":"15",
+        "Tidak Sekolah Lk":"1",
+        "Sekolah Pr":"14",
+        "Tidak Sekolah Pr":"0"
+    },
+    {
+        "Nama Umur":"PALUPPUNG",
+        "Klasifikasi Umur":"16_18",
+        "Sekolah Lk":"17",
+        "Tidak Sekolah Lk":"2",
+        "Sekolah Pr":"12",
+        "Tidak Sekolah Pr":"0"
+    },
+    {
+        "Nama Umur":"LOMBOK",
+        "Klasifikasi Umur":"19_24",
+        "Sekolah Lk":"23",
+        "Tidak Sekolah Lk":"30",
+        "Sekolah Pr":"17",
+        "Tidak Sekolah Pr":"18"
+    },
+    {
+        "Nama Umur":"LENA",
+        "Klasifikasi Umur":"19_24",
+        "Sekolah Lk":"13",
+        "Tidak Sekolah Lk":"14",
+        "Sekolah Pr":"17",
+        "Tidak Sekolah Pr":"16"
+    },
+    {
+        "Nama Umur":"GALUNG",
+        "Klasifikasi Umur":"19_24",
+        "Sekolah Lk":"19",
+        "Tidak Sekolah Lk":"24",
+        "Sekolah Pr":"17",
+        "Tidak Sekolah Pr":"7"
+    },
+    {
+        "Nama Umur":"PALUPPUNG",
+        "Klasifikasi Umur":"19_24",
+        "Sekolah Lk":"15",
+        "Tidak Sekolah Lk":"22",
+        "Sekolah Pr":"22",
+        "Tidak Sekolah Pr":"19"
+    }
+]

@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\User;
 use App\Models\Kabupaten;
@@ -10,7 +11,6 @@ use App\Imports\ImportProvinsi;
 use App\Imports\ImportTimKerja;
 use Illuminate\Database\Seeder;
 use App\Imports\ImportKabupaten;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Imports\ImportKecamatan;
 use App\Imports\ImportPangkatGol;
 use App\Imports\ImportPendidikan;
@@ -43,33 +43,39 @@ class DatabaseSeeder extends Seeder
             'password'  => Hash::make('bkkbn@666803')
         ]);
 
-        User::create([
-            'name'      => 'Kepegawaian',
-            'username'  => 'kepeg.sulbar',
-            'role_name' => 'admin',
-            'password'  => Hash::make('bkkbn@666803')
-        ]);
+        $rws = [
+            ['nama_rw' => 'LOMBOK'],
+            ['nama_rw' => 'LENA'],
+            ['nama_rw' => 'GALUNG'],
+            ['nama_rw' => 'PALUPPUNG'],
+        ];
 
-        User::create([
-            'name'      => 'Rezky Murwanto',
-            'username'  => 'kaper.sulbar',
-            'role_name' => 'admin',
-            'password'  => Hash::make('bkkbn@666803')
-        ]);
+        foreach ($rws as $rw) {
+            DB::table('nama_r_w_s')->updateOrInsert(
+                ['nama_rw' => $rw['nama_rw']],
+                ['created_at' => now(), 'updated_at' => now()]
+            );
+        }
 
-        $this->call(ProvinsiSeeder::class);
-        $this->call(KabupatenSeeder::class);
-        //$this->call(KecamatanSeeder::class);
-        $this->call(JabatanSeeder::class);
-        $this->call(PendidikanSeeder::class);
-        $this->call(TimKerjaSeeder::class);
-        $this->call(PangkatGolSeeder::class);
-        $this->call(KelasJabSeeder::class);
-        $this->call(DataPegawaiSeeder::class);
-        $this->call(DataPKBSeeder::class);
-        $this->call(TahunanDisiplinSeeder::class);
-        $this->call(TahunanPresensiSeeder::class);
-
+        $this->call(KelompokUmurSeeder::class);
+        $this->call(KesertaanPoktanSeeder::class);
+        $this->call(Hamil4TSeeder::class);
+        $this->call(TingkatPendidikanSeeder::class);
+        $this->call(PendidikanAnakSeeder::class);
+        $this->call(WusUsiaKawinSeeder::class);
+        $this->call(WanitaKawinKelompokUmurSeeder::class);
+        $this->call(KeinginanHamilSeeder::class);
+        $this->call(PusKesertaanKbSeeder::class);
+        $this->call(PusMetodeKbSeeder::class);
+        $this->call(PusTempatKbSeeder::class);
+        $this->call(PusAlasanTidakKbSeeder::class);
+        $this->call(PusAnakStatusKbSeeder::class);
+        $this->call(PusBalitaSeeder::class);
+        $this->call(JenisPekerjaanSeeder::class);
+        $this->call(JenisKegiatanSeeder::class);
+        $this->call(InformasiKBSeeder::class);
     }
+
+
 
 }

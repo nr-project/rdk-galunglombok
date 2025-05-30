@@ -1,0 +1,82 @@
+[
+    {
+        "Nama RW":"LOMBOK",
+        "Jenis Kelamin":"Laki-Laki",
+        "tidak_sekolah":"58",
+        "tidak_tamat_sd":"79",
+        "tamat_sd":"88",
+        "tamat_smp":"50",
+        "tamat_sma":"96",
+        "tamat_pt":"27"
+    },
+    {
+        "Nama RW":"LENA",
+        "Jenis Kelamin":"Laki-Laki",
+        "tidak_sekolah":"45",
+        "tidak_tamat_sd":"38",
+        "tamat_sd":"52",
+        "tamat_smp":"30",
+        "tamat_sma":"37",
+        "tamat_pt":"21"
+    },
+    {
+        "Nama RW":"GALUNG",
+        "Jenis Kelamin":"Laki-Laki",
+        "tidak_sekolah":"33",
+        "tidak_tamat_sd":"39",
+        "tamat_sd":"82",
+        "tamat_smp":"47",
+        "tamat_sma":"72",
+        "tamat_pt":"13"
+    },
+    {
+        "Nama RW":"PALUPPUNG",
+        "Jenis Kelamin":"Laki-Laki",
+        "tidak_sekolah":"40",
+        "tidak_tamat_sd":"34",
+        "tamat_sd":"62",
+        "tamat_smp":"34",
+        "tamat_sma":"73",
+        "tamat_pt":"16"
+    },
+    {
+        "Nama RW":"LOMBOK",
+        "Jenis Kelamin":"Perempuan",
+        "tidak_sekolah":"44",
+        "tidak_tamat_sd":"44",
+        "tamat_sd":"93",
+        "tamat_smp":"59",
+        "tamat_sma":"70",
+        "tamat_pt":"29"
+    },
+    {
+        "Nama RW":"LENA",
+        "Jenis Kelamin":"Perempuan",
+        "tidak_sekolah":"49",
+        "tidak_tamat_sd":"60",
+        "tamat_sd":"65",
+        "tamat_smp":"33",
+        "tamat_sma":"46",
+        "tamat_pt":"18"
+    },
+    {
+        "Nama RW":"GALUNG",
+        "Jenis Kelamin":"Perempuan",
+        "tidak_sekolah":"45",
+        "tidak_tamat_sd":"37",
+        "tamat_sd":"83",
+        "tamat_smp":"50",
+        "tamat_sma":"56",
+        "tamat_pt":"21"
+    },
+    {
+        "Nama RW":"PALUPPUNG",
+        "Jenis Kelamin":"Perempuan",
+        "tidak_sekolah":"30",
+        "tidak_tamat_sd":"35",
+        "tamat_sd":"76",
+        "tamat_smp":"32",
+        "tamat_sma":"66",
+        "tamat_pt":"26"
+    }
+]

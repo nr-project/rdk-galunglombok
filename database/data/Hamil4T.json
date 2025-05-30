@@ -1,0 +1,42 @@
+[
+    {
+        "Nama RW":"LOMBOK",
+        "JUMLAH PUS (WANITA KAWIN)  STATUS HAMIL":"8",
+        "< 20 (TERLALU MUDA)":"1",
+        "20-35":"6",
+        "> 35 (TERLALU TUA)":"1",
+        "YANG JUMLAH ANAK LAHIR HIDUP > 2 ANAK (TERLALU BANYAK)":"2",
+        "YANG JARAK KELAHIRAN SEBELUMNYA DENGAN KEHAMILAN < 2 TAHUN (TERLALU ":"0",
+        "YANG UMUR ANAK TERKECIL < 3 TAHUN":"0"
+    },
+    {
+        "Nama RW":"LENA",
+        "JUMLAH PUS (WANITA KAWIN)  STATUS HAMIL":"11",
+        "< 20 (TERLALU MUDA)":"1",
+        "20-35":"8",
+        "> 35 (TERLALU TUA)":"2",
+        "YANG JUMLAH ANAK LAHIR HIDUP > 2 ANAK (TERLALU BANYAK)":"3",
+        "YANG JARAK KELAHIRAN SEBELUMNYA DENGAN KEHAMILAN < 2 TAHUN (TERLALU ":"0",
+        "YANG UMUR ANAK TERKECIL < 3 TAHUN":"0"
+    },
+    {
+        "Nama RW":"GALUNG",
+        "JUMLAH PUS (WANITA KAWIN)  STATUS HAMIL":"2",
+        "< 20 (TERLALU MUDA)":"0",
+        "20-35":"2",
+        "> 35 (TERLALU TUA)":"0",
+        "YANG JUMLAH ANAK LAHIR HIDUP > 2 ANAK (TERLALU BANYAK)":"0",
+        "YANG JARAK KELAHIRAN SEBELUMNYA DENGAN KEHAMILAN < 2 TAHUN (TERLALU ":"0",
+        "YANG UMUR ANAK TERKECIL < 3 TAHUN":"0"
+    },
+    {
+        "Nama RW":"PALUPPUNG",
+        "JUMLAH PUS (WANITA KAWIN)  STATUS HAMIL":"6",
+        "< 20 (TERLALU MUDA)":"0",
+        "20-35":"5",
+        "> 35 (TERLALU TUA)":"1",
+        "YANG JUMLAH ANAK LAHIR HIDUP > 2 ANAK (TERLALU BANYAK)":"2",
+        "YANG JARAK KELAHIRAN SEBELUMNYA DENGAN KEHAMILAN < 2 TAHUN (TERLALU ":"0",
+        "YANG UMUR ANAK TERKECIL < 3 TAHUN":"0"
+    }
+]

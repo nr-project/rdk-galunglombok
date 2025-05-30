@@ -1,0 +1,58 @@
+[
+    {
+        "RW":"LOMBOK",
+        "JUMLAH PUS PESERTA KB MODERN":"40",
+        "RS PEMERINTAH\/ TNI\/POLRI":"10",
+        "RS SWASTA":"0",
+        "PUSKESMAS\/ KLINIK TNI\/POLRI":"3",
+        "KLINIK SWASTA":"0",
+        "PRAKTEK DOKTER":"0",
+        "PUSTU\/ PUSLING\/ BIDAN DESA":"23",
+        "PRAKTEK MANDIRI BIDAN":"0",
+        "MOBIL PELAYANAN KB":"0",
+        "TOKO OBAT\/APOTIK":"1",
+        "LAINNYA":"3"
+    },
+    {
+        "RW":"LENA",
+        "JUMLAH PUS PESERTA KB MODERN":"18",
+        "RS PEMERINTAH\/ TNI\/POLRI":"0",
+        "RS SWASTA":"0",
+        "PUSKESMAS\/ KLINIK TNI\/POLRI":"5",
+        "KLINIK SWASTA":"0",
+        "PRAKTEK DOKTER":"2",
+        "PUSTU\/ PUSLING\/ BIDAN DESA":"8",
+        "PRAKTEK MANDIRI BIDAN":"1",
+        "MOBIL PELAYANAN KB":"0",
+        "TOKO OBAT\/APOTIK":"2",
+        "LAINNYA":"0"
+    },
+    {
+        "RW":"GALUNG",
+        "JUMLAH PUS PESERTA KB MODERN":"19",
+        "RS PEMERINTAH\/ TNI\/POLRI":"3",
+        "RS SWASTA":"0",
+        "PUSKESMAS\/ KLINIK TNI\/POLRI":"7",
+        "KLINIK SWASTA":"0",
+        "PRAKTEK DOKTER":"0",
+        "PUSTU\/ PUSLING\/ BIDAN DESA":"9",
+        "PRAKTEK MANDIRI BIDAN":"0",
+        "MOBIL PELAYANAN KB":"0",
+        "TOKO OBAT\/APOTIK":"0",
+        "LAINNYA":"0"
+    },
+    {
+        "RW":"PALUPPUNG",
+        "JUMLAH PUS PESERTA KB MODERN":"21",
+        "RS PEMERINTAH\/ TNI\/POLRI":"0",
+        "RS SWASTA":"1",
+        "PUSKESMAS\/ KLINIK TNI\/POLRI":"3",
+        "KLINIK SWASTA":"0",
+        "PRAKTEK DOKTER":"0",
+        "PUSTU\/ PUSLING\/ BIDAN DESA":"10",
+        "PRAKTEK MANDIRI BIDAN":"0",
+        "MOBIL PELAYANAN KB":"0",
+        "TOKO OBAT\/APOTIK":"7",
+        "LAINNYA":"0"
+    }
+]

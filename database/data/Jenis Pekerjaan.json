@@ -1,0 +1,58 @@
+[
+    {
+        "RW": "LOMBOK",
+        "JUMLAH INDIVIDU DALAM KELUARGA": "615",
+        "PETANI": "77",
+        "NELAYAN": "1",
+        "PEDAGANG": "13",
+        "PEJABAT NEGARA": "4",
+        "PNS/TNI/POLRI": "12",
+        "SWASTA": "89",
+        "PENSIUNAN": "12",
+        "PEKERJA LEPAS": "159",
+        "JUMLAH  BEKERJA": "367",
+        "TIDAK BEKERJA": "248"
+    },
+    {
+        "RW": "LENA",
+        "JUMLAH INDIVIDU DALAM KELUARGA": "420",
+        "PETANI": "1",
+        "NELAYAN": "0",
+        "PEDAGANG": "2",
+        "PEJABAT NEGARA": "0",
+        "PNS/TNI/POLRI": "8",
+        "SWASTA": "3",
+        "PENSIUNAN": "21",
+        "PEKERJA LEPAS": "225",
+        "JUMLAH  BEKERJA": "260",
+        "TIDAK BEKERJA": "160"
+    },
+    {
+        "RW": "GALUNG",
+        "JUMLAH INDIVIDU DALAM KELUARGA": "510",
+        "PETANI": "115",
+        "NELAYAN": "1",
+        "PEDAGANG": "0",
+        "PEJABAT NEGARA": "26",
+        "PNS/TNI/POLRI": "13",
+        "SWASTA": "15",
+        "PENSIUNAN": "6",
+        "PEKERJA LEPAS": "53",
+        "JUMLAH  BEKERJA": "229",
+        "TIDAK BEKERJA": "281"
+    },
+    {
+        "RW": "PALUPPUNG",
+        "JUMLAH INDIVIDU DALAM KELUARGA": "459",
+        "PETANI": "115",
+        "NELAYAN": "0",
+        "PEDAGANG": "34",
+        "PEJABAT NEGARA": "0",
+        "PNS/TNI/POLRI": "11",
+        "SWASTA": "25",
+        "PENSIUNAN": "13",
+        "PEKERJA LEPAS": "115",
+        "JUMLAH  BEKERJA": "313",
+        "TIDAK BEKERJA": "146"
+    }
+]

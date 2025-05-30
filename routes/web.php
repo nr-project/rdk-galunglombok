@@ -29,30 +29,13 @@ function set_show($route) {
 
 Route::group(['namespace' => 'App\Http\Controllers'],function()
 {
-    // -------------------------- main dashboard ----------------------//
     Route::controller(HomeController::class)->group(function () {
-        Route::get('/home', 'index')->middleware('auth')->name('home');
-    });
-
-    Route::controller(AbsensiPegawai::class)->group(function () {
-        Route::get('/absensi-harian', 'absensi_harian')->middleware('auth')->name('absensi-harian');
-        Route::get('/absensi-disiplin', 'absensi_disiplin')->middleware('auth')->name('absensi-disiplin');
-        Route::post('/refresh-harian-presensi', [GoogleSheetController::class, 'refresh'])->name('refresh-harian-presensi');
-        Route::post('/refresh-harian-disiplin', [SheetHarianDisiplinController::class, 'refresh'])->name('refresh-harian-disiplin');
-    });
-
-    Route::controller(LaporanPegawai::class)->group(function () {
-        Route::get('/laporan-presensi', 'laporan_presensi')->middleware('auth')->name('laporan-presensi');
-        Route::get('/laporan-disiplin', 'laporan_disiplin')->middleware('auth')->name('laporan-disiplin');
+        Route::get('/', 'index')->name('home');
     });
 });
 
-Route::get('/', [AuthenticatedSessionController::class, 'create'])->name('login')->middleware('guest');
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login.post');
-
-
-Route::get('/read-google-sheet', [GoogleSheetController::class, 'readData']);
 
 require __DIR__.'/auth.php';

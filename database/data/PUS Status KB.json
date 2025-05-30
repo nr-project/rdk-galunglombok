@@ -1,0 +1,34 @@
+[
+    {
+        "RW":"LOMBOK",
+        "JUMLAH PUS":"105",
+        "MODERN":"40",
+        "TRADISIONAL":"0",
+        "JUMLAH PUS PESERTA KB":"40",
+        "PUS BUKAN PESERTA KB":"65"
+    },
+    {
+        "RW":"LENA",
+        "JUMLAH PUS":"76",
+        "MODERN":"18",
+        "TRADISIONAL":"0",
+        "JUMLAH PUS PESERTA KB":"18",
+        "PUS BUKAN PESERTA KB":"58"
+    },
+    {
+        "RW":"GALUNG",
+        "JUMLAH PUS":"67",
+        "MODERN":"19",
+        "TRADISIONAL":"0",
+        "JUMLAH PUS PESERTA KB":"19",
+        "PUS BUKAN PESERTA KB":"48"
+    },
+    {
+        "RW":"PALUPPUNG",
+        "JUMLAH PUS":"71",
+        "MODERN":"21",
+        "TRADISIONAL":"0",
+        "JUMLAH PUS PESERTA KB":"21",
+        "PUS BUKAN PESERTA KB":"50"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "Nama RW":"LOMBOK",
+        "JUMLAH PUS PESERTA KB MODERN":"40",
+        "MOW":"9",
+        "MOP":"0",
+        "IUD":"2",
+        "IMPLAN":"3",
+        "SUNTIK":"23",
+        "PIL":"3",
+        "KONDOM":"0",
+        "MAL":"0"
+    },
+    {
+        "Nama RW":"LENA",
+        "JUMLAH PUS PESERTA KB MODERN":"18",
+        "MOW":"0",
+        "MOP":"0",
+        "IUD":"0",
+        "IMPLAN":"6",
+        "SUNTIK":"8",
+        "PIL":"4",
+        "KONDOM":"0",
+        "MAL":"0"
+    },
+    {
+        "Nama RW":"GALUNG",
+        "JUMLAH PUS PESERTA KB MODERN":"19",
+        "MOW":"3",
+        "MOP":"0",
+        "IUD":"0",
+        "IMPLAN":"6",
+        "SUNTIK":"8",
+        "PIL":"2",
+        "KONDOM":"0",
+        "MAL":"0"
+    },
+    {
+        "Nama RW":"PALUPPUNG",
+        "JUMLAH PUS PESERTA KB MODERN":"21",
+        "MOW":"1",
+        "MOP":"0",
+        "IUD":"1",
+        "IMPLAN":"2",
+        "SUNTIK":"7",
+        "PIL":"10",
+        "KONDOM":"0",
+        "MAL":"0"
+    }
+]
