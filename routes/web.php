@@ -9,6 +9,9 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DataManagemenController;
 use App\Http\Controllers\GoogleSheetController;
 use App\Http\Controllers\KuantitasPenduduk;
+use App\Http\Controllers\KualitasPenduduk;
+use App\Http\Controllers\PembangunanKeluarga;
+use App\Http\Controllers\Kuantitas;
 use App\Http\Controllers\SheetHarianDisiplinController;
 
 /** for side bar menu active */
@@ -33,7 +36,15 @@ Route::group(['namespace' => 'App\Http\Controllers'],function()
         Route::get('/', 'index')->name('home');
     });
 
+
     Route::get('/kelompok-umur', [KuantitasPenduduk::class, 'kelompok_umur']);
+    Route::get('/kelompok-umur-lk', [KuantitasPenduduk::class, 'kelompok_umur_lk']);
+    Route::get('/kelompok-umur-pr', [KuantitasPenduduk::class, 'kelompok_umur_pr']);
+
+    Route::get('/jenis-kegiatan', [KualitasPenduduk::class, 'jenis_kegiatan']);
+    Route::get('/poktan-bkb', [PembangunanKeluarga::class, 'poktan_bkb']);
+
+
 });
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
