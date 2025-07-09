@@ -6,14 +6,14 @@
         <div class="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
             <div class="flex flex-col gap-2 py-4 md:flex-row md:items-center print:hidden">
                 <div class="grow">
-                    <h5 class="text-16">Data Kuantitas Penduduk</h5>
+                    <h5 class="text-16">Data Pembangunan Keluarga</h5>
                 </div>
                 <ul class="flex items-center gap-2 text-sm font-normal shrink-0">
                     <li class="relative before:content-['\ea54'] before:font-remix ltr:before:-right-1 rtl:before:-left-1  before:absolute before:text-[18px] before:-top-[3px] ltr:pr-4 rtl:pl-4 before:text-slate-400 dark:text-zink-200">
-                        <a href="#!" class="text-slate-400 dark:text-zink-200">Data Kuantitas Penduduk</a>
+                        <a href="#!" class="text-slate-400 dark:text-zink-200">Data Pembangunan Keluarga</a>
                     </li>
                     <li class="text-slate-700 dark:text-zink-100">
-                        Jumlah individu laki-laki dalam keluarga menurut kelompok umur
+                        Jumlah keluarga yang ikut serta Bina Keluarga Balita (BKB) menurut status PUS dan kesertaan Ber-KB
                     </li>
                 </ul>
             </div>
@@ -21,7 +21,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="flex items-center">
-                        <h6 class="text-15 grow">Jumlah individu laki-laki dalam keluarga menurut kelompok umur</h6>
+                        <h6 class="text-15 grow">Jumlah keluarga yang ikut Bina Keluarga Balita (BKB) menurut status PUS dan Kesertaan Ber-KB</h6>
                         <div class="shrink-0">
 
                         </div>
@@ -30,12 +30,12 @@
                     <table id="alternativePagination" class="display table table-bordered" style="width:100%">
                         <thead>
                                 <th rowspan="2" class="text-center align-middle">RW</th>
-                                <th rowspan="2" class="text-center align-middle">JUMLAH KELUARGA SASARAN BKB</th>
+                                <th rowspan="2" class="text-center align-middle">JUMLAH <br>KELUARGA <br>SASARAN BKB</th>
                                 <th colspan="2" class="text-center">KELUARGA IKUT BKB</th>
-                                <th rowspan="2" class="text-center align-middle">STATUS BUKAN PUS</th>
+                                <th rowspan="2" class="text-center align-middle">STATUS <br>BUKAN <br>PUS</th>
                                 <th colspan="8" class="text-center">KELUARGA IKUT BKB MENURUT STATUS PUS DAN KESERTAAN BER-KB</th>
-                                <th rowspan="2" class="text-center align-middle">BER-KB CARA TRADISIONAL</th>
-                                <th rowspan="2" class="text-center align-middle">TIDAK BER-KB</th>
+                                <th rowspan="2" class="text-center align-middle">BER-KB CARA <br>TRADISIONAL</th>
+                                <th rowspan="2" class="text-center align-middle">TIDAK <br>BER-KB</th>
                             </tr>
                                 <th class="text-center">JUMLAH</th>
                                 <th class="text-center">%</th>
